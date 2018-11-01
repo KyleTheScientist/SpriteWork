@@ -36,13 +36,13 @@ namespace SpriteWork
         {
             orig(self);
             if (dumpedCollections.Contains(self.Collection)) return;
-            
+
             DumpSpriteCollection(self.Collection);
             dumpedCollections.Add(self.Collection);
 
         }
 
-            public static void Dump(Action<tk2dSpriteCollectionData> orig, tk2dSpriteCollectionData self)
+        public static void Dump(Action<tk2dSpriteCollectionData> orig, tk2dSpriteCollectionData self)
         {
             orig(self);
             if (dumpedCollections.Contains(self)) return;
