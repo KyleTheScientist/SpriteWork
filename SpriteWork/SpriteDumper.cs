@@ -29,7 +29,7 @@ namespace SpriteWork
             Hook hook = new Hook(
                typeof(tk2dBaseSprite).GetMethod("InitInstance", BindingFlags.NonPublic | BindingFlags.Instance),
                typeof(SpriteDumper).GetMethod("BaseDump")
-           );
+            );
         }
 
         public static void BaseDump(Action<tk2dBaseSprite> orig, tk2dBaseSprite self)
